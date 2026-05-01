@@ -181,7 +181,7 @@ const API_BASE_URL = 'http://localhost:8080/api';
 * Backend working ✅
 * H2 (testing) configured ✅
 * MySQL (persistent DB) configured ✅
-* Frontend–backend integration pending 🚧
+* Frontend–backend integration done ✅
 
 ---
 
