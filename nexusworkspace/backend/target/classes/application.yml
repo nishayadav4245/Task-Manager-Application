@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/workspace
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: nishayadav062
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  security:
+    token-secret: change-this-dev-secret-at-least-32-characters
+    token-expiration-minutes: 1440
+  cors:
+    allowed-origins: http://localhost:5173,http://127.0.0.1:5173
